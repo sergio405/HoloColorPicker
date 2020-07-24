@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.colorpickerholov2.HueLinearColorPicker
+        style="@style/HSVLinearColorPicker"
+        android:id="@+id/hue"/>
+
+    <com.example.colorpickerholov2.SaturationLinearColorPicker
+        style="@style/HSVLinearColorPicker"
+        android:id="@+id/sat" />
+
+    <com.example.colorpickerholov2.ValueLinearColorPicker
+        style="@style/HSVLinearColorPicker"
+        android:id="@+id/val" />
+
+</LinearLayout>

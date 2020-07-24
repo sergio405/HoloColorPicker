@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorPicker">
+        <attr name="handleStrokeColor" format="color"/>
+        <attr name="hue" format="float"/>
+        <attr name="saturation" format="float"/>
+        <attr name="value" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="RingColorPicker">
+        <attr name="ringWidth" format="dimension"/>       <!-- Ancho del anillo de colores -->
+        <attr name="gapWidth" format="dimension"/>        <!-- Tamaño del hueco entre anillo y circulo interior -->
+        <attr name="diameterPointer" format="dimension"/> <!-- Tamaño del puntero -->
+    </declare-styleable>
+</resources>

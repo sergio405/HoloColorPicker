@@ -1,0 +1,2 @@
+rootProject.name='Color Picker Holo v2'
+include ':app'
