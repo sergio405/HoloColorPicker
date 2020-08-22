@@ -341,6 +341,8 @@ public class RingColorPicker extends ColorPicker {
                     if (mValLCP != null)
                         mValLCP.updateHSV(mHue, mSat, mVal);
                     invalidate();
+                    if (mOnColorChangedListener != null)
+                        mOnColorChangedListener.colorChanged(color);
                 }
             });
         }
@@ -360,8 +362,11 @@ public class RingColorPicker extends ColorPicker {
                     if (mSatLCP != null)
                         mSatLCP.updateHSV(mHue, mSat, mVal);
                     invalidate();
+                    if (mOnColorChangedListener != null)
+                        mOnColorChangedListener.colorChanged(color);
                 }
             });
+
         }
     }
 }

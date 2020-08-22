@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     RingColorPicker rcp;
     TextView red, green, blue;
+    ValueLinearColorPicker value;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         rcp = (RingColorPicker) findViewById(R.id.rcp);
+        value = (ValueLinearColorPicker) findViewById(R.id.value);
         red = (TextView) findViewById(R.id.red);
         green = (TextView) findViewById(R.id.green);
         blue = (TextView) findViewById(R.id.blue);
@@ -37,8 +39,9 @@ public class MainActivity extends AppCompatActivity {
                 blue.setText(blue_int);
 
             }
-        });
 
+        });
+        rcp.setValueLinearColorPicker(value);
 
     }
 }

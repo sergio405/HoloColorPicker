@@ -44,8 +44,8 @@
             android:padding="60dp"
             android:visibility="visible"
             custom:hue="0"
-            custom:ringWidth="110dp"
-            app:gapWidth="25dp"
+            custom:ringWidth="80dp"
+            app:gapWidth="20dp"
             app:diameterPointer="40dp"
             custom:saturation="1.0"
             custom:value="1.0"/>
@@ -129,6 +129,11 @@
                 android:text="0"
                 android:textSize="35dp" />
         </LinearLayout>
+
+        <com.example.colorpickerholov2.ValueLinearColorPicker
+            android:id="@+id/value"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
 
     </LinearLayout>
 
