@@ -14,16 +14,18 @@ public class MainActivity extends AppCompatActivity {
     RingColorPicker rcp;
     TextView red, green, blue;
     ValueLinearColorPicker value;
+    SaturationLinearColorPicker sat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+      //  toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         rcp = (RingColorPicker) findViewById(R.id.rcp);
         value = (ValueLinearColorPicker) findViewById(R.id.value);
+        sat = (SaturationLinearColorPicker) findViewById(R.id.sat);
         red = (TextView) findViewById(R.id.red);
         green = (TextView) findViewById(R.id.green);
         blue = (TextView) findViewById(R.id.blue);
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
         rcp.setValueLinearColorPicker(value);
+        rcp.setSaturationLinearColorPicker(sat);
 
     }
 }

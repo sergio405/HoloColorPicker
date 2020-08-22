@@ -17,9 +17,9 @@ public abstract class LinearColorPicker extends ColorPicker {
     protected RectF mRect;
     protected RectF mHandleRect;
 
-    private static final int RECT_EDGE_RADIUS = 10;
+    private static final int RECT_EDGE_RADIUS = 40;
     private static final int HANDLE_PADDING = 10;
-    private static final int HANDLE_EDGE_RADIUS = 5;
+    private static final int HANDLE_EDGE_RADIUS = 40;
 
     public LinearColorPicker(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -72,8 +72,10 @@ public abstract class LinearColorPicker extends ColorPicker {
         canvas.drawRoundRect(mRect, RECT_EDGE_RADIUS, RECT_EDGE_RADIUS, mColorPaint);
 
         // draw handle
-        canvas.drawRoundRect(mHandleRect, HANDLE_EDGE_RADIUS, HANDLE_EDGE_RADIUS, mHandlePaint);
+        canvas.drawRoundRect(mHandleRect, HANDLE_EDGE_RADIUS, HANDLE_EDGE_RADIUS, pincelBlanco);
         canvas.drawRoundRect(mHandleRect, HANDLE_EDGE_RADIUS, HANDLE_EDGE_RADIUS, mHandleStrokePaint);
+        //canvas.drawRoundRect(mHandleRect, HANDLE_EDGE_RADIUS, HANDLE_EDGE_RADIUS, mHandlePaint);
+        //canvas.drawRoundRect(mHandleRect, HANDLE_EDGE_RADIUS, HANDLE_EDGE_RADIUS, mHandleStrokePaint);
     }
 
     @Override

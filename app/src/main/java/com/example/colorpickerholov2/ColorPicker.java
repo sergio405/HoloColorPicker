@@ -51,7 +51,8 @@ public abstract class ColorPicker extends View {
     protected void init() {
         mColorPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-//aca toma el color
+        // estos son los pinceles de colores usados para pintar todos los elementos
+
         mHandlePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mHandlePaint.setColor(ColorUtils.getColorFromHSV(mHue, mSat, mVal));
 
